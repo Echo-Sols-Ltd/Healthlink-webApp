@@ -1,6 +1,11 @@
 import React from "react";
 import Card from "../doctor/Card";
 
+/**
+ * StatsGrid Component
+ * Displays a grid of statistics cards for the manager dashboard
+ * @returns {JSX.Element} A grid of statistical information
+ */
 const StatsGrid = () => {
   const stats = [
     { title: "Total Visit Requests", total: 12 },
