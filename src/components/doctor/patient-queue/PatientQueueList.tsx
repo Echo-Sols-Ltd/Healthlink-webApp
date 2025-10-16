@@ -1,4 +1,4 @@
-import PatientCard from "./QueueCard";
+import PatientCard from "./PatientCard";
 
 /**
  * @interface QueuePatient
