@@ -11,7 +11,7 @@ const StatCard: React.FC<StatCardProps> = ({ title, value }) => {
     <Card className="shadow-md">
       <CardContent className="p-4 text-center">
         <p className="text-sm text-gray-500">{title}</p>
-        <p className="text-xl font-bold mt-2">{value}</p>
+        <p className="text-xl font-bold mt-3">{value}</p>
       </CardContent>
     </Card>
   );

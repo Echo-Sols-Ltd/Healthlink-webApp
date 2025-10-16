@@ -10,7 +10,7 @@ const StatsGrid = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
       {stats.map((s, i) => (
         <Card key={i} title={s.title} total={s.total} />
       ))}

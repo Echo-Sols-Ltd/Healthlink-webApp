@@ -13,7 +13,7 @@ const Notifications = () => {
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-600">Here are your recent medications.</p>
+        <p className="text-gray-700">Here are your recent medications.</p>
       </CardContent>
     </Card>
   );
