@@ -31,7 +31,7 @@ export default function PatientLoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("Form submitted:", formData);
+    console.log("Form submtted:", formData);
 
     const users: Record<
       string,
@@ -54,8 +54,6 @@ export default function PatientLoginPage() {
     const user = users[formData.email.trim().toLowerCase()];
 
     if (user && user.password === formData.password) {
-      // ✅ safer redirect in Next.js
-      // window.location.assign(user.redirect);
       redirect(user.redirect);
     } else {
       alert("Invalid email or password");
