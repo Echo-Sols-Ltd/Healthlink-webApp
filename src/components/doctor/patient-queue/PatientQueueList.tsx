@@ -1,14 +1,23 @@
-import PatientCard from "./PatientCard";
+import PatientCard from "./QueueCard";
 
-type Patient = {
+/**
+ * @interface QueuePatient
+ * @description Type definition for patient queue data
+ */
+interface QueuePatient {
   id: string;
   name: string;
   description: string;
   serviceDate: string;
-  image: string;
+  imageUrl: string;
   urgent: boolean;
-};
+}
 
+/**
+ * @component PatientQueueList
+ * @description Displays a list of patients in the queue
+ * @todo Implement real-time updates for queue positions
+ */
 export default function PatientQueueList({
   search,
   selectedDate,
