@@ -5,16 +5,6 @@ import Sidebar from "@/components/manager/Sidebar";
 import React, { ReactNode } from "react";
 
 const DoctorLayout = ({ children }: { children: ReactNode }) => {
-//   const pathname = usePathname();
-
-//   // Match only /doctor/patients/[patientId]
-//   const isPatientChart =
-//     /^\/doctor\/patients\/[^/]+$/.test(pathname || "");
-
-//   if (isPatientChart) {
-//     // Fullscreen layout without Navbar/Sidebar
-//     return <div className="h-screen w-screen bg-white">{children}</div>;
-//   }
 
   // Default Doctor layout with Navbar + Sidebar
   return (
