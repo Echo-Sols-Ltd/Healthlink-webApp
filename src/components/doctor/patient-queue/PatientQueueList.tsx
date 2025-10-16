@@ -25,13 +25,14 @@ export default function PatientQueueList({
   search?: string;
   selectedDate?: Date;
 }) {
-  const patients: Patient[] = [
+  // Convert mock data to match QueuePatient interface
+  const patients: QueuePatient[] = [
     {
       id: "apt23056",
       name: "James Bond",
       description: "Chest pain",
       serviceDate: "2025-08-24",
-      image: "/man.png",
+      imageUrl: "/man.png", // Fixed property name
       urgent: true,
     },
     {
@@ -39,7 +40,7 @@ export default function PatientQueueList({
       name: "Tyres Gibson",
       description: "Headache",
       serviceDate: "2025-08-25",
-      image: "/man.png",
+      imageUrl: "/man.png", // Fixed property name
       urgent: false,
     },
     {
@@ -47,7 +48,7 @@ export default function PatientQueueList({
       name: "Jonathan Kuminga",
       description: "Fever",
       serviceDate: "2025-08-24",
-      image: "/man.png",
+      imageUrl: "/man.png", // Fixed property name
       urgent: true,
     },
   ];
